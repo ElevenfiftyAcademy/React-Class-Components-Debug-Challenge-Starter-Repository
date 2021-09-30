@@ -1,25 +1,20 @@
-import logo from './logo.svg';
+import { Component } from 'react';
 import './App.css';
+import Main from './Main';
+class App extends Component {
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  render() {
+    return (
+      <div className="App">
+      <h1 className="title" style='leftIndent'>Heroes and Villains</h1>
+      <Main />
+      </div>
+    );
+  }
+}
+
+let leftIndent = {
+  marginLeft: '1em'
 }
 
 export default App;
